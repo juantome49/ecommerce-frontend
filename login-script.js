@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const loginForm = document.getElementById('login-form');
     const errorMessage = document.getElementById('error-message');
     // Asegúrate de que esta URL coincida con la de tu backend desplegado
-    const API_URL = 'https://ecommerce-backend-byu5.onrender.com';
+    const API_URL = 'https://ecommerce-backend-byu5.onrender.com/api/login';
 
     if (loginForm) {
         loginForm.addEventListener('submit', async (e) => {
