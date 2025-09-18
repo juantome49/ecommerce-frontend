@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel de Administración</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header container">
+        <a href="index.html" class="logo">Mi Tienda Online</a>
+        <nav class="nav">
+            <a href="index.html">Inicio</a>
+            <a href="admin.html">Admin</a>
+        </nav>
+    </header>
+    <main class="admin-main-content container">
+        <h1>Panel de Administración</h1>
+        <section class="admin-form-section">
+            <h2>Agregar Nuevo Producto</h2>
+            <form id="product-form">
+                <div class="form-group">
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="description">Descripción:</label>
+                    <textarea id="description" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="price">Precio:</label>
+                    <input type="number" id="price" required min="0">
+                </div>
+                <div class="form-group">
+                    <label for="stock">Stock:</label>
+                    <input type="number" id="stock" required min="0">
+                </div>
+                <div class="form-group">
+                    <label for="category">Categoría:</label>
+                    <input type="text" id="category" required>
+                </div>
+                <div class="form-group">
+                    <label for="imageUrl">URL de la Imagen:</label>
+                    <input type="text" id="imageUrl" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Agregar Producto</button>
+            </form>
+        </section>
+        <section class="admin-product-list-section">
+            <h2>Productos Existentes</h2>
+            <div class="table-responsive">
+                <table class="admin-table">
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Precio</th>
+                            <th>Stock</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody id="product-table-body"></tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+    <script src="admin-script.js"></script>
+</body>
+</html>

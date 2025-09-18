@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login de Administrador</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header container">
+        <a href="index.html" class="logo">Mi Tienda Online</a>
+    </header>
+    <main class="login-container">
+        <h1>Login de Administrador</h1>
+        <form id="login-form">
+            <div class="form-group">
+                <label for="username">Usuario:</label>
+                <input type="text" id="username" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Contraseña:</label>
+                <input type="password" id="password" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Iniciar Sesión</button>
+        </form>
+        <p id="error-message" class="error-message"></p>
+    </main>
+    <script src="login-script.js"></script>
+</body>
+</html>

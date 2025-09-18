@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Carrito</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header container">
+        <a href="index.html" class="logo">Mi Tienda Online</a>
+        <nav class="nav">
+            <a href="index.html">Inicio</a>
+            <a href="admin.html">Admin</a>
+            <a href="cart.html" class="btn btn-secondary btn-cart">Carrito</a>
+        </nav>
+    </header>
+    <main class="container">
+        <h1>Mi Carrito de Compras</h1>
+        <div class="cart-items" id="cart-items"></div>
+        <div class="cart-summary" id="cart-summary">
+            <h3>Total: $<span id="cart-total">0.00</span></h3>
+            <button class="btn btn-primary">Proceder al Pago</button>
+        </div>
+    </main>
+    <footer class="footer">
+        <p>&copy; 2025 Mi Tienda Online. Todos los derechos reservados.</p>
+    </footer>
+    <script src="cart-script.js"></script>
+</body>
+</html>
